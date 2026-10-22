@@ -23,13 +23,11 @@ module FB
     # make sure to run it at runtime, not compile time.
     def self.download_url(node)
       arch = node['cpu']['architecture']
+      vsep = '_'
+      asep = '_'
       if ChefUtils.fedora_derived?
-        vsep = '-'
-        asep = '.'
         ext = 'rpm'
       else
-        vsep = '_'
-        asep = '_'
         ext = 'deb'
         arch = arch == 'x86_64' ? 'amd64' : arch
       end
