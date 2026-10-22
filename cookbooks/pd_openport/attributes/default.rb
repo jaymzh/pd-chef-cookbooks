@@ -20,7 +20,7 @@
 default['pd_openport'] = {
   'manage_packages' => true,
   'download_base_url' => 'https://openport.io/download',
-  'version' => ChefUtils.fedora_derived? ? '1.0.2-1' : '2.2.3-1',
+  'version' => 'latest',
   'config' => {
     'options' => [],
     'sessions' => {},

@@ -35,6 +35,11 @@ directory.
 The vversion on `node['pd_openport']['version']` will be downloaded and
 installed.
 
+The default version is `latest`, so it'll keep the package updated
+automatically, like most FB-style cookbooks. However, a specific version
+may be set if necessary (and at various times they haven't offered a "latest"
+for some platforms).
+
 ### Configuration
 
 This cookbook uses a parameterized systemd unit file to manage all instances of
